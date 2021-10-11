@@ -19,8 +19,8 @@ switch (mes) {
 }*/
 
 let quit = true;
+var cont = 0;
 while (quit) {
-
         var opcao = prompt("R-Registar Pedido\nV-Valor a Pagar\nE-Dados Estatisticos\nT-Terminar\n\nEscolha uma opção: ");
         switch (opcao) {
                 case 'r':
@@ -44,4 +44,7 @@ while (quit) {
                         alert("Opção não encontrada");
                         break;
         }
+        cont += 1;
 }
+cont -= 1;
+alert("Deu " + cont + " voltas");
