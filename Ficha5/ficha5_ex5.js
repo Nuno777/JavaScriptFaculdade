@@ -28,7 +28,7 @@ do {
                                 valor = valor - descon;
                                 total = valor + valor * 0.12;
                         } else {
-                                
+
                         }
 
                         break;
@@ -40,7 +40,7 @@ do {
                                 valor = valor - descon;
                                 total = valor + valor * 0.05;
                         } else {
-                                
+
                         }
 
                         break;
