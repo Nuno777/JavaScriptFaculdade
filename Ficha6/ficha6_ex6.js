@@ -1,9 +1,9 @@
 function calcimc() {
-    var imc, altura, peso;
-    peso = parseFloat(prompt("Insira o seu peso: "));
+    let imc, altura, peso;
+    peso = parseInt(prompt("Insira o seu peso: "));
     altura = parseFloat(prompt("Insira a sua altura: "));
-    imc = peso / altura * altura;
-    if (imc > 17) {
+    imc = peso / (altura * altura);
+    if (imc < 17) {
         document.write("Muito abaixo do peso");
     } else if (imc >= 17 && imc < 18.49) {
         document.write("Abaixo do peso");
