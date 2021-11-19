@@ -9,7 +9,7 @@ function menu() {
 //funcao que nao recebe
 function lerArtigo() {
     let p;
-    p = parseInt(prompt("1-Cadernos\n2-Canetas\n3-Lapis\n4-Borrachas"));
+    p = parseInt(prompt("1-Cadernos\n2-Canetas\n3-Lapis\n4-Borrachas\n5-Sair"));
 
     return p;
 }
@@ -59,11 +59,17 @@ do {
     op = menu();
     switch (op) {
         case 'V':
-            art = lerArtigo();
-            qt = lerQuant();
-            prec = calculaPreco(art, qt);
-            alert("Tem a pagar " + prec + "€ por " + qt + " artigo(s)");
-            totalPreco = totalPreco + prec;
+            do {
+                art = lerArtigo();
+                if (art != 5) {
+                    qt = lerQuant();
+                    prec = calculaPreco(art, qt);
+                    alert("Tem a pagar " + prec + "€ por " + qt + " artigo(s)");
+                    totalPreco = totalPreco + prec;
+                }
+
+            } while (art != 5);
+
             break;
         case 'F':
             escreveFatu(totalPreco);
