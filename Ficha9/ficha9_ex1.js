@@ -17,8 +17,11 @@ function lerArtigo() {
 function lerQuant() {
     let q;
     q = parseInt(prompt("Quantidade de produto: "));
-
-    return q;
+    if (q < 1) {
+        alert("Quantidade invalido");
+    } else {
+        return q;
+    }
 }
 
 //funcao que devolve o artigo e quantidade
@@ -37,6 +40,7 @@ function calculaPreco(at, qtr) {
             break;
 
         default:
+            alert("Opção invalida");
             break;
     }
 
@@ -44,6 +48,7 @@ function calculaPreco(at, qtr) {
 }
 
 function escreveFatu(valorF) {
+
     alert("Total faturado " + valorF + "\nLucro " + valorF * 0.3);
 
 }
