@@ -1,4 +1,4 @@
-/* let num = [], v, quant;
+let num = [], v, quant;
 do {
     quant = parseInt(prompt("Quantos numeros quer: "));
     for (let i = 0; i < quant; i++) {
@@ -6,12 +6,5 @@ do {
         num.push(v);
         document.write("Numero [" + i + "] = " + num[i] + "</br>");
     }
-} while (quant < 0 || isNaN(quant)); */
+} while (quant < 0 || isNaN(quant));
 
-function lerQuant() {
-    let quant;
-    do {
-        quant = parseInt(prompt("Quantos numeros quer: "));
-    } while (quant < 0 || isNaN(quant));
-    return quant;
-}
