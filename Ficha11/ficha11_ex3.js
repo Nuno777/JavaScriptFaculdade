@@ -3,7 +3,8 @@ function calcularMedia(vetor) {
     for (let a = 0; a < 4; a++) {
         soma = soma + vetor[a];
     }
-    return soma;
+    media=soma/array.length;
+    return media;
 }
 
 function lerVetor() {
@@ -20,8 +21,9 @@ function lerVetor() {
     return num;
 }
 
+
+let media,vet,s;
 vet = lerVetor();
-soma = calcularMedia();
-media = (soma / vet.len);
-alert(media);
+media = calcularMedia();
+document.write("Media " + media);
 
