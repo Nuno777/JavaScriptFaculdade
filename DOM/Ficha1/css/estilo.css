@@ -1,0 +1,49 @@
+body {
+    /*isto são selectores*/
+    background: rgb(68, 68, 209);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    /*arredonda os cantos da section */
+    padding: 15px;
+    width: 500px;
+    /*largura da section*/
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(97, 96, 96);
+    /*aplica sombra na caixa*/
+}
+
+footer {
+    color: rgba(206, 198, 198, 0.938);
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    border-radius: 8px;
+    /*pode ser em px - fica com cantos redondos ou % - fica oval*/
+    max-width: 100%;
+    /*tornar a imagem responsive*/
+    height: auto;
+    /*tornar a imagem responsive*/
+    display: block;
+    margin-left: auto;
+    /*alinhamento da imagem*/
+    margin-right: auto;
+}
+
+div {
+    /*isto chama-se SELETOR*/
+    text-align: center;
+    /*alinha o texto da div ao centro*/
+    padding: 8px;
+    /*permite dar um espaço*/
+}
