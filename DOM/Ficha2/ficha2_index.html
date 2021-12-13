@@ -8,9 +8,23 @@
         <title>Ficha2</title>
     </head>
     <body>
-        <script src="JS/dom.js"></script>
-           <div id="cor" onmouseover="mudarCor('red')" onclick="mudarCor('orange')" onmouseout="mudarCor('blue')">
-            
-           </div>
+        <fieldset>
+            <legend>Ex1</legend>
+            <div id="cor" onmouseover="mudarCor('red')"
+                onclick="mudarCor('orange')" onmouseout="mudarCor('blue')">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ex2</legend>
+            <div>
+                <input type="text" name="texto" id="texto"> <br><br>
+                <input type="button" value="Adicionar à Lista" onclick="addLista()">
+                <input type="button" value="Limpar Lista" onclick="limparLista()">
+                <ul></ul>
+            </div>
+        </fieldset>
+
+        <script src="JS/ficha2_dom.js"></script>
     </body>
 </html>
