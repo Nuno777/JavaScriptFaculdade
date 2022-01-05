@@ -1,0 +1,30 @@
+input {
+    margin: 5px 5px;
+    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-weight: bold;
+}
+
+div {
+    margin: 5px auto;
+}
+
+button {
+    background-color: #0a7de9;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #53a1eb;
+}
